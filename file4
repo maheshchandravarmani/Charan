@@ -1,0 +1,12 @@
+ System.out.println("Started schedule..."); 
+        System.out.println("Waiting 30 seconds to get status...");
+        Thread.sleep( 30000 );
+ 
+        // 6. Use object key above to get schedule state
+        oo = adminPort.getState(
+          "schedule",
+          objectKey,
+          null, // request all state properties
+          credentials,
+          null,
+          "en"
